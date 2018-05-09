@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DBFunctions>
+  <command>
+    <name>actualizar_sistema</name>
+    <prepared>true</prepared>
+    <parameter>
+      <name>idsis</name>
+      <type>Integer</type>
+      <array>false</array>
+    </parameter>
+    <parameter>
+      <name>i_id_boton</name>
+      <type>Integer</type>
+      <array>true</array>
+    </parameter>
+    <parameter>
+      <name>valor_boton</name>
+      <type>Bit</type>
+      <array>true</array>
+    </parameter>
+    <parameter>
+      <name>i_id_led</name>
+      <type>Integer</type>
+      <array>true</array>
+    </parameter>
+    <parameter>
+      <name>valor_led</name>
+      <type>Bit</type>
+      <array>true</array>
+    </parameter>
+    <parameter>
+      <name>i_id_poten</name>
+      <type>Integer</type>
+      <array>true</array>
+    </parameter>
+    <parameter>
+      <name>valor_pot</name>
+      <type>Real</type>
+      <array>true</array>
+    </parameter>
+  </command>
+</DBFunctions>

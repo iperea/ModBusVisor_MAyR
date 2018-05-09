@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="hmibdDataSet" targetNamespace="http://tempuri.org/hmibdDataSet.xsd" xmlns:mstns="http://tempuri.org/hmibdDataSet.xsd" xmlns="http://tempuri.org/hmibdDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="hmibd64" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="hmibd64 (Settings)" PropertyReference="ApplicationSettings.SCADAWinForms.Properties.Settings.GlobalReference.Default.hmibd64" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vista_historial_botonesTableAdapter" GeneratorDataComponentClassName="vista_historial_botonesTableAdapter" Name="vista_historial_botones" UserDataComponentName="vista_historial_botonesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hmibd64 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "instante", "nombre", "id_led", "value" FROM "public"."vista_historial_botones"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="instante" DataSetColumn="instante" />
+              <Mapping SourceColumn="nombre" DataSetColumn="nombre" />
+              <Mapping SourceColumn="id_led" DataSetColumn="id_led" />
+              <Mapping SourceColumn="value" DataSetColumn="value" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="hmibdDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="hmibdDataSet" msprop:Generator_UserDSName="hmibdDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vista_historial_botones" msprop:Generator_TableClassName="vista_historial_botonesDataTable" msprop:Generator_TableVarName="tablevista_historial_botones" msprop:Generator_TablePropName="vista_historial_botones" msprop:Generator_RowDeletingName="vista_historial_botonesRowDeleting" msprop:Generator_UserTableName="vista_historial_botones" msprop:Generator_RowChangingName="vista_historial_botonesRowChanging" msprop:Generator_RowEvHandlerName="vista_historial_botonesRowChangeEventHandler" msprop:Generator_RowDeletedName="vista_historial_botonesRowDeleted" msprop:Generator_RowEvArgName="vista_historial_botonesRowChangeEvent" msprop:Generator_RowChangedName="vista_historial_botonesRowChanged" msprop:Generator_RowClassName="vista_historial_botonesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="instante" msprop:Generator_ColumnVarNameInTable="columninstante" msprop:Generator_ColumnPropNameInRow="instante" msprop:Generator_ColumnPropNameInTable="instanteColumn" msprop:Generator_UserColumnName="instante" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id_led" msprop:Generator_ColumnVarNameInTable="columnid_led" msprop:Generator_ColumnPropNameInRow="id_led" msprop:Generator_ColumnPropNameInTable="id_ledColumn" msprop:Generator_UserColumnName="id_led" type="xs:int" minOccurs="0" />
+              <xs:element name="value" msprop:Generator_ColumnVarNameInTable="columnvalue" msprop:Generator_ColumnPropNameInRow="value" msprop:Generator_ColumnPropNameInTable="valueColumn" msprop:Generator_UserColumnName="value" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Conections>
+  <conector>
+    <paket>IConversorTCPIP</paket>
+    <clase>ConversorTCPIP</clase>
+    <name>Conversor TCP</name>
+    <active>true</active>
+<config>ip=aurova.ua.es;port=55008</config>
+<!---<config>ip=10.1.1.5;port=502</config>-->
+<!--<config>ip=172.18.34.110;port=50008</config>-->
+<!---<config>ip=127.0.0.1;port=502</config>-->
+  </conector>
+  <conector>
+    <name>Conversor Wifi</name>
+    <paket>IConversorWiffi2RS485</paket>
+    <clase>ConversorWifiRS485</clase>
+    <active>false</active>
+    <config>ip=10.0.0.10;port=4660;timeout=100</config>
+  </conector>  
+  <protocol>
+    <name>Modbus TCP</name>
+    <paket>IProtocolModBusTCP</paket>
+    <clase>Protocol_MB_TCP</clase>
+    <active>true</active>
+    <config>idSlave=7</config>
+  </protocol>
+  <protocol>
+    <paket>IProtocolModBusRTU</paket>
+    <clase>Protocol_MB_RTU</clase>
+    <name>ModBus Serie RTU</name>
+    <active>false</active>
+    <config></config>
+  </protocol>
+  <database>
+    <paket>IDB_PosgreDB</paket>
+    <clase>NpgSQL_PosgreSQLDB</clase>
+    <name>Conector DB NpgSQL</name>
+    <active>true</active>
+    <config>Server=127.0.0.1;Port=5432;User Id=hmiuser;Password=1234;Database=hmibd;</config>
+  </database>
+</Conections>
